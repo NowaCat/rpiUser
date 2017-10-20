@@ -1,3 +1,5 @@
+import sys
+
 buffer = ""
 
 print("Welcome to Virgil!")
@@ -10,7 +12,7 @@ else:
     try:
         while True:
             input()
-            userInput= input()
+            userInput = input()
             buffer += userInput + "\n"
     except:
-        break
+        sys.exit()
